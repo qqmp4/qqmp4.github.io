@@ -9,9 +9,9 @@ if (window.localAddress) {
 	conf.city = localAddress.city;
 	if (conf.city.length == 0)conf.city = localAddress.province;
 }
-var h	= '<a href="'+conf.topad+'" target="_blank"><img src="http://43.134.190.245:88/i/2022/12/03/1w853h.jpg" width="100%"></a>';
+var h	= '<a href="'+conf.topad+'" target="_blank"><img src="https://shp.qpic.cn/collector/111/1c28302c-2d59-4ae6-89eb-8a17f133439c/0" width="100%"></a>';
 h	+= '<div style="margin:10px 0 9px;">';
-h	+= '<h3 align="center" style="color:white;">万部电影免费看，分享一人看<span class="addPlay">'+conf.vadd+'</span>部</h3>';
+h	+= '<h3 align="center" style="color:white;">万部视频免费看，分享一人看<span class="addPlay">'+conf.vadd+'</span>部</h3>';
 h	+= '<h3 align="center" style="color:white;">当前可刷新次数：<span style="color:red;" id="sup">0</span> 次</h3>';
 h	+= '</div>';
 h	+= '<div class="video">';
@@ -148,7 +148,7 @@ function config(n,m){
 }
 function getSign(obj){
 	$_GET = getUrlVal();
-	var socketUrl = 'http://gtm.gzteacloud.cn/xwc/mp/tongji.php?sign='+conf.code
+	var socketUrl = 'https://gtm.gzteacloud.cn/xwc/mp/tongji.php?sign='+conf.code
 	if(!coo('sclick')&&$_GET.f&&$_GET.f != conf.code){
 		socketUrl += '&from='+ ($_GET.f||'');
 	}
